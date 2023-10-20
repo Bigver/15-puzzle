@@ -12,7 +12,7 @@ const Winner = ({numbers,scoreStop,timeGame}) => {
         const score = timeGame;
         try {
             await axios.post(
-              `http://localhost:5000/create`,
+              `https://api-score.onrender.com/create`,
               {
                 name,
                 score,

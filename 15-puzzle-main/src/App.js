@@ -8,8 +8,9 @@ const App = () => {
     useEffect(() => {
         const getScore = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/score");
+            const res = await axios.get("https://api-score.onrender.com/score");
             setScore(res.data);
+            console.log(res.data)
         } catch (err) {}
         };
         getScore();
