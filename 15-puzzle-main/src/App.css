@@ -1,0 +1,34 @@
+:root{
+  --size: 110px;
+  --tile: #342956;
+  --correct: #6e50b4;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html,body {
+  background: #64bdb0;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+ margin-top: 10%; 
+}
+.App * {font-family: 'Pacifico', cursive;}
+
+.App table, th, td {
+  border: 1px solid black;
+  background-color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.App .table {
+  margin-left: 5%;
+  margin-top: 1%;
+}

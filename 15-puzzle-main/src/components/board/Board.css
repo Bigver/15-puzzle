@@ -1,0 +1,21 @@
+.game{
+  position: relative;
+  margin-left: 10%;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(4,var(--size));
+  grid-template-rows: repeat(4,var(--size));
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #55ab9f;
+}
+
+.time{
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
