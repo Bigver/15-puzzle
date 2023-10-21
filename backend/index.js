@@ -43,7 +43,7 @@ app.post("/create", async(req,res)=>{
 
 app.get("/score" , async (req , res) => {
   try {
-    connection.query("SELECT * FROM score_game ORDER BY score DESC" , (err , results , fields) => {
+    connection.query("SELECT * FROM score_game ORDER BY score ASC" , (err , results , fields) => {
       if(err){
         console.log(err);
         return res.status(400).send()
